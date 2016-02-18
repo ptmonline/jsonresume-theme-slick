@@ -460,6 +460,13 @@
 				{{#if name}}
 				<h3><span class="label label-default label-lg">{{name}}</span></h3>
 				{{/if}}
+				{{#if keywords.length}}
+					<ul class="keywords">
+						{{#each keywords}}
+							<li>{{.}}</li>
+						{{/each}}
+					</ul>
+				{{/if}}
 			</div>
 			{{/each}}
 		</div>
